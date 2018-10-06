@@ -93,6 +93,39 @@
           </div>
         </div>
       </div>
+      <div class="job-item">
+        <div class="item-job-logo">
+          <img src="https://public.mofanghr.com/head/2018/03/06/C07A407B2AEFF0E0E86F8A446667CD93.jpg?w=120&h=120" alt="">
+        </div>
+        <div class="item-job-info">
+          <div class="info-title">
+            <div class="hot-container">
+              <span class="job-name">TMK邀约专员-大钟寺</span>
+              <span class="hot">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="#icon-hotchunse"></use>
+                </svg>
+              </span>
+            </div>
+            <span class="salary">6000-10000</span>
+          </div>
+          <div class="info-company">达内教育</div>
+          <div class="info-condition">
+            <span class="condition-item">北京-北下关</span>
+          </div>
+          <div class="info-treatment">
+            <span class="treatment-item">餐饮补贴</span>
+          </div>
+          <div class="info-interview-time">
+            <span class="clock-icon">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-clock"></use>
+              </svg>
+            </span>
+            <span class="interview-date">10月9日 (周二)  11:00</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
