@@ -1,24 +1,24 @@
 <template>
   <div class="footer-guide">
-    <router-link to="/job" class="guide-item" :class="$route.path==='/job'?' active':''">
+    <router-link to="/layout/job" class="guide-item" :class="$route.path==='/layout/job'?' active':''">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-gongwenbao"></use>
       </svg>
       <span>职位</span>
     </router-link>
-    <router-link to="/interview" class="guide-item" :class="$route.path==='/interview'?' active':''">
+    <router-link to="/layout/interview" class="guide-item" :class="$route.path==='/layout/interview'?' active':''">
       <svg class="icon too-big" aria-hidden="true">
         <use xlink:href="#icon-newspapero"></use>
       </svg>
       <span>面试</span>
     </router-link>
-    <router-link to="/message" class="guide-item" :class="$route.path==='/message'?' active':''">
+    <router-link to="/layout/message" class="guide-item" :class="$route.path==='/layout/message'?' active':''">
       <svg class="icon too-big" aria-hidden="true">
         <use xlink:href="#icon-message"></use>
       </svg>
       <span>消息</span>
     </router-link>
-    <router-link to="/personal" class="guide-item" :class="$route.path==='/personal'?' active':''">
+    <router-link to="/layout/personal" class="guide-item" :class="$route.path==='/layout/personal'?' active':''">
       <svg class="icon too-big" aria-hidden="true">
         <use xlink:href="#icon-tab_personal"></use>
       </svg>

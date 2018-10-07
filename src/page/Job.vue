@@ -1,95 +1,97 @@
 <template>
-  <div class="job-page-container">
-    <!--<download-tip></download-tip>-->
-    <div class="search-bar">
-      <div class="select-city">
-        <span class="city">北京</span>
-        <span class="arrow">
+  <div style="height: 100%">
+    <div class="job-page-container">
+      <!--<download-tip></download-tip>-->
+      <div class="search-bar">
+        <div class="select-city">
+          <span class="city">北京</span>
+          <span class="arrow">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-downarrow"></use>
           </svg>
         </span>
-      </div>
-      <div class="search-input-imitation">
+        </div>
+        <div class="search-input-imitation">
         <span class="icon-container">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-fangdajing"></use>
           </svg>
         </span>
-        <span class="placeholder">搜索职位/公司</span>
+          <span class="placeholder">搜索职位/公司</span>
+        </div>
       </div>
-    </div>
-    <ul class="filter-menu">
-      <li class="filter-condition">
-        <span class="condition-name">筛选</span>
-        <span class="condition-arrow">
+      <ul class="filter-menu">
+        <li class="filter-condition">
+          <span class="condition-name">筛选</span>
+          <span class="condition-arrow">
           <svg class="icon" aria-hidden="true">
             <use xlink:href="#icon-3101jiantou3"></use>
           </svg>
         </span>
-      </li>
-      <li class="filter-condition">
-        <span class="condition-name">面试时间</span>
-        <span class="condition-arrow">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-3101jiantou3"></use>
-          </svg>
-        </span>
-      </li>
-      <li class="filter-condition">
-        <span class="condition-name">智能排序</span>
-        <span class="condition-arrow">
-          <svg class="icon" aria-hidden="true">
-            <use xlink:href="#icon-3101jiantou3"></use>
-          </svg>
-        </span>
-      </li>
-    </ul>
-    <div class="swiper-container">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide">
-          <img src="https://public.mofanghr.com/head/2018/09/29/79B9E4B93364109B1A891CBE3DBDC60C.jpg" alt="">
         </li>
-        <li class="swiper-slide">
-          <img src="https://public.mofanghr.com/head/2018/08/08/EAFD9D5874A415A800C8260C73A16FD9.jpg" alt="">
+        <li class="filter-condition">
+          <span class="condition-name">面试时间</span>
+          <span class="condition-arrow">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-3101jiantou3"></use>
+          </svg>
+        </span>
         </li>
-        <li class="swiper-slide">
-          <img src="https://public.mofanghr.com/head/2018/08/08/0C14991E47B3188133E5D91D0F8DF633.jpg" alt="">
+        <li class="filter-condition">
+          <span class="condition-name">智能排序</span>
+          <span class="condition-arrow">
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-3101jiantou3"></use>
+          </svg>
+        </span>
         </li>
       </ul>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="job-list">
-      <div class="job-item" v-for="i in 20" :key="i">
-        <div class="item-job-logo">
-          <img src="https://public.mofanghr.com/head/2018/03/06/C07A407B2AEFF0E0E86F8A446667CD93.jpg?w=120&h=120" alt="">
-        </div>
-        <div class="item-job-info">
-          <div class="info-title">
-            <div class="hot-container">
-              <span class="job-name">TMK邀约专员-大钟寺</span>
-              <span class="hot">
+      <div class="swiper-container">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img src="https://public.mofanghr.com/head/2018/09/29/79B9E4B93364109B1A891CBE3DBDC60C.jpg" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="https://public.mofanghr.com/head/2018/08/08/EAFD9D5874A415A800C8260C73A16FD9.jpg" alt="">
+          </li>
+          <li class="swiper-slide">
+            <img src="https://public.mofanghr.com/head/2018/08/08/0C14991E47B3188133E5D91D0F8DF633.jpg" alt="">
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="job-list">
+        <div class="job-item" v-for="i in 20" :key="i" @click="toDetail(i)">
+          <div class="item-job-logo">
+            <img src="https://public.mofanghr.com/head/2018/03/06/C07A407B2AEFF0E0E86F8A446667CD93.jpg?w=120&h=120" alt="">
+          </div>
+          <div class="item-job-info">
+            <div class="info-title">
+              <div class="hot-container">
+                <span class="job-name">TMK邀约专员-大钟寺</span>
+                <span class="hot">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-hotchunse"></use>
                 </svg>
               </span>
+              </div>
+              <span class="salary">6000-10000</span>
             </div>
-            <span class="salary">6000-10000</span>
-          </div>
-          <div class="info-company">达内教育</div>
-          <div class="info-condition">
-            <span class="condition-item">北京-北下关</span>
-          </div>
-          <div class="info-treatment">
-            <span class="treatment-item">餐饮补贴</span>
-          </div>
-          <div class="info-interview-time">
+            <div class="info-company">达内教育</div>
+            <div class="info-condition">
+              <span class="condition-item">北京-北下关</span>
+            </div>
+            <div class="info-treatment">
+              <span class="treatment-item">餐饮补贴</span>
+            </div>
+            <div class="info-interview-time">
             <span class="clock-icon">
               <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-clock"></use>
               </svg>
             </span>
-            <span class="interview-date">10月9日 (周二)  11:00</span>
+              <span class="interview-date">10月9日 (周二)  11:00</span>
+            </div>
           </div>
         </div>
       </div>
@@ -110,6 +112,16 @@
           el: '.swiper-pagination',
         },
       })
+    },
+    data(){
+      return {
+
+      }
+    },
+    methods:{
+      toDetail(i){
+        this.$router.push('/layoutBase/detail/'+i)
+      }
     },
     components:{
 //      DownloadTip

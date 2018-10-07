@@ -1,10 +1,10 @@
 <template>
-  <router-view style="height: 100%"/>
+  <div style="height: 100%">
+    <router-view/>
+  </div>
 </template>
 <script>
-  export default {
-
-  }
+  export default {}
 </script>
 <style scoped lang="stylus" rel="stylesheet/stylus">
 

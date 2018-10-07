@@ -6,6 +6,9 @@ import Interview from "./page/Interview.vue"
 import Message from "./page/Message.vue"
 import Personal from "./page/Personal.vue"
 import Login from "./page/Login.vue"
+import Detail from "./page/Detail.vue"
+import Layout from "./components/Layout.vue"
+import LayoutBase from "./components/LayoutBase.vue"
 
 Vue.use(Router)
 
@@ -14,45 +17,52 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/job',
-      name: 'job',
-      component: Job,
-        meta:{
-          showFooter:true
-        }
+      path:"/layout",
+      name:"layout",
+      component:Layout,
+      children:[
+        {
+          path:"job",
+          name:"job",
+          component:Job
+        },
+        {
+          path:"interview",
+          name:"interview",
+          component:Interview
+        },
+        {
+          path:"message",
+          name:"message",
+          component:Message
+        },
+        {
+          path:"personal",
+          name:"personal",
+          component:Personal
+        },
+      ]
     },
     {
-      path: '/interview',
-      name: 'interview',
-      component: Interview,
-        meta:{
-            showFooter:true
-        }
-    },
-    {
-      path: '/message',
-      name: 'message',
-      component: Message,
-        meta:{
-            showFooter:true
-        }
-    },
-    {
-      path: '/personal',
-      name: 'personal',
-      component: Personal,
-        meta:{
-            showFooter:true
-        }
-    },
-    {
-        path: '/login',
-        name: 'login',
-        component: Login
+      path:"/layoutBase",
+      name:"layoutBase",
+      component:LayoutBase,
+      children:[
+        {
+          path: 'detail/:id',
+          name: 'detail',
+          component: Detail,
+        },
+        {
+          path: 'login',
+          name: 'login',
+          component: Login,
+        },
+      ]
     },
     {
       path:"/",
-      redirect:"/job"
+      redirect:"/layout/job"
     }
   ]
 })

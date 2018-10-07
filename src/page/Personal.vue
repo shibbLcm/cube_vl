@@ -25,7 +25,136 @@
           <p class="num-type">收藏职位</p>
         </li>
       </ul>
-
+      <div class="edit-resume-list">
+        <div class="personal-list-item">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-paper"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>编辑简历</span>
+            <span style="background: #fff;
+    color: #00beff;
+    font-size: .2rem;
+    border: 1px solid rgba(0,190,255,0.4);
+    border-radius: .5rem;
+    margin-right: .2rem;
+    padding: .05rem .15rem;">待完善</span>
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+        <div class="personal-list-item" style="border-bottom: none">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-categoryselected"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>求职意向</span>
+            <!--<span style="background: #fff;
+    color: #00beff;
+    font-size: .2rem;
+    border: 1px solid rgba(0,190,255,0.4);
+    border-radius: .5rem;
+    margin-right: .2rem;
+    padding: .05rem .15rem;">待完善</span>-->
+            <span style="margin-right: .2rem;">目前正在找工作</span>
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="edit-resume-list">
+        <div class="personal-list-item">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-icimport"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>导入简历</span>
+            <span style="color: #ccc;margin-right: .2rem;">支持51job</span>
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+        <div class="personal-list-item">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-upload"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>上传简历/附件</span>
+            <!--<span style="background: #fff;
+    color: #00beff;
+    font-size: .2rem;
+    border: 1px solid rgba(0,190,255,0.4);
+    border-radius: .5rem;
+    margin-right: .2rem;
+    padding: .05rem .15rem;">待完善</span>-->
+            <span style="margin-right: .2rem">APP扫码上传</span>
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+        <div class="personal-list-item" style="border-bottom: none">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>打开APP，领100元红包</span>
+            <!--<span style="background: #fff;
+    color: #00beff;
+    font-size: .2rem;
+    border: 1px solid rgba(0,190,255,0.4);
+    border-radius: .5rem;
+    margin-right: .2rem;
+    padding: .05rem .15rem;">待完善</span>-->
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="edit-resume-list">
+        <div class="personal-list-item" style="border-bottom: none">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-setting"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>系统设置</span>
+            <!--<span style="background: #fff;
+    color: #00beff;
+    font-size: .2rem;
+    border: 1px solid rgba(0,190,255,0.4);
+    border-radius: .5rem;
+    margin-right: .2rem;
+    padding: .05rem .15rem;">待完善</span>-->
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="edit-resume-list">
+        <div class="personal-list-item" style="border-bottom: none">
+          <svg class="icon left" aria-hidden="true">
+            <use xlink:href="#icon-icon-2"></use>
+          </svg>
+          <p class="item-content" style="display:flex;justify-content: space-between;align-items: center ">
+            <span>商务合作</span>
+            <!--<span style="background: #fff;
+    color: #00beff;
+    font-size: .2rem;
+    border: 1px solid rgba(0,190,255,0.4);
+    border-radius: .5rem;
+    margin-right: .2rem;
+    padding: .05rem .15rem;">待完善</span>-->
+          </p>
+          <svg class="icon right" aria-hidden="true">
+            <use xlink:href="#icon-right"></use>
+          </svg>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -60,7 +189,7 @@
         >span
           margin-right .2rem
     .personal-content
-      height 74%
+      padding-bottom 1.5rem
       background-color: #f7f7f7;
       .job-number
         height 1.2rem
@@ -82,4 +211,27 @@
                 font-size .5rem
             &.num-type
               color #666
+      .edit-resume-list
+        background-color: white;
+        box-sizing border-box
+        padding 0 .3rem
+        margin-bottom .2rem
+        /*特地提出来，重复次数很多，给他们单独定一个共同的样式类*/
+        .personal-list-item
+          height 1rem
+          border-bottom 1px solid #eee
+          display flex
+          justify-content space-between
+          align-items center
+          font-size .26rem
+          .left
+            color #00beff
+          .item-content
+            color #333
+            margin-left .2rem
+            flex-grow 1
+            flex-shrink 1
+          .right
+            color #eee
+            margin-right .2rem
 </style>
