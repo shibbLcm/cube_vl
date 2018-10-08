@@ -91,7 +91,7 @@
               </svg>
             </span>
               <span class="interview-date">10月9日 (周二)  11:00</span>
-              <svg class="icon share" aria-hidden="true" @click.stop="alert('已点击分享~~~~')">
+              <svg class="icon share" aria-hidden="true" @click.stop="shareHandler()">
                 <use xlink:href="#icon-share"></use>
               </svg>
             </div>
@@ -124,6 +124,9 @@
     methods:{
       toDetail(i){
         this.$router.push('/layoutBase/detail/'+i)
+      },
+      shareHandler(){
+        alert('已点击分享~~~~')
       }
     },
     components:{
