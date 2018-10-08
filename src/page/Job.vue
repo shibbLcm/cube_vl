@@ -91,6 +91,9 @@
               </svg>
             </span>
               <span class="interview-date">10月9日 (周二)  11:00</span>
+              <svg class="icon share" aria-hidden="true" @click.stop="alert('已点击分享~~~~')">
+                <use xlink:href="#icon-share"></use>
+              </svg>
             </div>
           </div>
         </div>
@@ -267,9 +270,15 @@
             border-top 1px solid #eee
             margin-top .4rem
             font-size .25rem
+            display flex
+            align-items center
             .clock-icon
               color #eee
               margin-right .2rem
             .interview-date
               color #ff6500
+              flex-grow 1
+              flex-shrink 1
+            .share
+              margin-right .3rem
 </style>

@@ -3,8 +3,8 @@
     <div class="small-secretary">
       <img src="https://static1.mofanghr.com/mobile/img/pic_secretary100@2x.ff1ce537.png" alt="">
       <div class="desciption">
-        <p class="name">魔方小秘书</p>
-        <span class="introduction">hi，我是您的魔方小秘书。魔方微猎——找工作快人一步！</span>
+        <p class="name">雇主小秘书</p>
+        <span class="introduction">hi，我是您的雇主小秘书。百家雇主——找工作快人一步！</span>
       </div>
       <span class="time">11:17</span>
     </div>

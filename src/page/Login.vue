@@ -1,7 +1,7 @@
 <template>
     <div class="login-container">
         <div class="logo-container">
-            <img ref="logo" src="https://static1.mofanghr.com/mobile/img/logo02@2x.9ffa3936.png" alt="">
+            <img ref="logo" src="../../public/assets/img/bj_gzhu.png" alt="">
         </div>
         <ul class="login-method">
             <li :class="{active:loginMethod}" @click="loginMethod=true">验证码进入</li>
@@ -39,7 +39,7 @@
             </div>
         </form>
         <p class="bottom-p">
-            注册代表你同意魔方微猎<a href="javascript:;">用户协议</a>
+            注册代表你同意百家雇主<a href="javascript:;">用户协议</a>
         </p>
     </div>
 </template>
